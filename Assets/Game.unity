@@ -166,14 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b053d6aef10399c429a85a1085efb7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startWaypoint: {fileID: 1822535544}
+  startWaypoint: {fileID: 1626853551}
   endWaypoint: {fileID: 610868649}
---- !u!114 &194375342 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114165990662270452, guid: 6242e7dfbd605fe44b5a5c324e157059,
-    type: 2}
-  m_PrefabInternal: {fileID: 676080105}
-  m_Script: {fileID: 11500000, guid: 5b0dc470278b3cf48adebbddc9ec0b2c, type: 3}
 --- !u!4 &194375344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4560939625695650, guid: 6242e7dfbd605fe44b5a5c324e157059,
@@ -460,54 +454,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6242e7dfbd605fe44b5a5c324e157059, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &705010758
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 705010760}
-  - component: {fileID: 705010759}
-  m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &705010759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 705010758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecaca44f642f97744beb887eda34c5bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path:
-  - {fileID: 1822535544}
-  - {fileID: 1422715504}
-  - {fileID: 1796413145}
-  - {fileID: 1626853551}
-  - {fileID: 1287043142}
-  - {fileID: 194375342}
---- !u!4 &705010760
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 705010758}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1392292385}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &777360349
 Prefab:
   m_ObjectHideFlags: 0
@@ -788,109 +734,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4560939625695650, guid: 6242e7dfbd605fe44b5a5c324e157059,
     type: 2}
   m_PrefabInternal: {fileID: 1524477052}
---- !u!114 &1287043142 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114165990662270452, guid: 6242e7dfbd605fe44b5a5c324e157059,
-    type: 2}
-  m_PrefabInternal: {fileID: 1524477052}
-  m_Script: {fileID: 11500000, guid: 5b0dc470278b3cf48adebbddc9ec0b2c, type: 3}
---- !u!1 &1392292384
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392292385}
-  - component: {fileID: 1392292388}
-  - component: {fileID: 1392292387}
-  - component: {fileID: 1392292386}
-  m_Layer: 0
-  m_Name: Body
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1392292385
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392292384}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 705010760}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1392292386
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392292384}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1392292387
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392292384}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: ee0fe6da4b84c0a4b866a99b081c3b4f, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1392292388
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392292384}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1422715502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4560939625695650, guid: 6242e7dfbd605fe44b5a5c324e157059,
     type: 2}
   m_PrefabInternal: {fileID: 533059617}
---- !u!114 &1422715504 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114165990662270452, guid: 6242e7dfbd605fe44b5a5c324e157059,
-    type: 2}
-  m_PrefabInternal: {fileID: 533059617}
-  m_Script: {fileID: 11500000, guid: 5b0dc470278b3cf48adebbddc9ec0b2c, type: 3}
 --- !u!1001 &1489689681
 Prefab:
   m_ObjectHideFlags: 0
@@ -1147,23 +995,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4560939625695650, guid: 6242e7dfbd605fe44b5a5c324e157059,
     type: 2}
   m_PrefabInternal: {fileID: 348569341}
---- !u!114 &1796413145 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114165990662270452, guid: 6242e7dfbd605fe44b5a5c324e157059,
-    type: 2}
-  m_PrefabInternal: {fileID: 348569341}
-  m_Script: {fileID: 11500000, guid: 5b0dc470278b3cf48adebbddc9ec0b2c, type: 3}
 --- !u!4 &1822535543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4560939625695650, guid: 6242e7dfbd605fe44b5a5c324e157059,
     type: 2}
   m_PrefabInternal: {fileID: 2063400736}
---- !u!114 &1822535544 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114165990662270452, guid: 6242e7dfbd605fe44b5a5c324e157059,
-    type: 2}
-  m_PrefabInternal: {fileID: 2063400736}
-  m_Script: {fileID: 11500000, guid: 5b0dc470278b3cf48adebbddc9ec0b2c, type: 3}
 --- !u!1001 &2063400736
 Prefab:
   m_ObjectHideFlags: 0
