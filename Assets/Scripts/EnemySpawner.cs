@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour {
 	[Range(0.1f, 120f)]
 	[SerializeField] float secondsBetweenSpawns = 3f;
 	[SerializeField] EnemyMovement enemyPrefab;
-	[SerializeField] int enemiesInWave = 5;
+	[SerializeField] int enemiesInWave = 50;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,8 @@ public class EnemySpawner : MonoBehaviour {
 	{
 		for (int i = 0; i < enemiesInWave; i++)
 		{
-			Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+			EnemyMovement newEnemy = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+			newEnemy.transform.parent = transform;
 			yield return new WaitForSeconds(secondsBetweenSpawns);
 		}
 	}
